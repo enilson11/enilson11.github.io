@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reciclaje en el Colegio Nuestra Señora de Altagracia</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div class="container">
+            <h1>Colegio Nuestra Señora de Altagracia</h1>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#proyecto">El Proyecto</a></li>
+                    <li><a href="#actividades">Actividades</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h2>Proyecto Escolar de Reciclaje</h2>
+            <p>¡Unimos esfuerzos para cuidar el medio ambiente y construir un futuro sostenible!</p>
+            <a href="#proyecto" class="btn">Conoce más</a>
+        </div>
+    </section>
+
+    <section id="contacto" class="contact">
+        <h2>Participa en nuestro Proyecto de Reciclaje</h2>
+        <p>Únete a nuestro equipo como participante o recolector encargado. Completa el formulario para registrarte:</p>
+        <form id="registroReciclaje">
+            <!-- Información Personal -->
+            <div class="form-group">
+                <label for="nombre">Nombre Completo:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+            </div>
+            <div class="form-group">
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" placeholder="Tu correo electrónico" required>
+            </div>
+            <div class="form-group">
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="Tu número de teléfono" required>
+            </div>
+    
+            <!-- Tipo de Participación -->
+            <div class="form-group">
+                <label for="tipoParticipacion">¿Cómo quieres participar?</label>
+                <select id="tipoParticipacion" name="tipoParticipacion" required>
+                    <option value="">Selecciona una opción</option>
+                    <option value="participante">Participante</option>
+                    <option value="recolector">Recolector Encargado</option>
+                </select>
+            </div>
+    
+            <!-- Dirección -->
+            <div class="form-group">
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" name="direccion" placeholder="Tu dirección completa" required>
+            </div>
+    
+            <!-- Mensaje Adicional -->
+            <div class="form-group">
+                <label for="mensaje">Mensaje (opcional):</label>
+                <textarea id="mensaje" name="mensaje" placeholder="¿Algo más que quieras decirnos?"></textarea>
+            </div>
+    
+            <!-- Botón de Enviar -->
+            <button type="submit">Enviar Registro</button>
+        </form>
+    </section>
+    
+
+    <!-- Sección Proyecto -->
+    <section id="proyecto" class="about">
+        <h2>Sobre el Proyecto</h2>
+        <p>En el Colegio Nuestra Señora de Altagracia estamos comprometidos con el medio ambiente. Nuestro proyecto de reciclaje tiene como objetivo educar a los estudiantes sobre la importancia de reducir, reutilizar y reciclar para preservar el planeta.</p>
+        <div class="about-details">
+            <div class="detail">
+                <h3>¿Qué hacemos?</h3>
+                <p>Recogemos materiales reciclables como papel, plástico y aluminio para darles un nuevo uso y reducir la contaminación.</p>
+            </div>
+            <div class="detail">
+                <h3>¿Por qué es importante?</h3>
+                <p>El reciclaje reduce los desechos en los vertederos, ahorra recursos naturales y disminuye el impacto ambiental.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Actividades -->
+    <section id="actividades" class="activities">
+        <h2>Nuestras Actividades</h2>
+        <div class="activities-container">
+            <div class="activity">
+                <i class="fas fa-recycle"></i>
+                <h3>Recolección de Materiales</h3>
+                <p>Semanalmente recolectamos papel, botellas de plástico y latas en el colegio.</p>
+            </div>
+            <div class="activity">
+                <i class="fas fa-paint-brush"></i>
+                <h3>Talleres Creativos</h3>
+                <p>Convertimos materiales reciclables en arte y manualidades.</p>
+            </div>
+            <div class="activity">
+                <i class="fas fa-chart-line"></i>
+                <h3>Charlas y Conferencias</h3>
+                <p>Expertos nos enseñan cómo cuidar el medio ambiente desde casa y la escuela.</p>
+            </div>
+            <div class="activity">
+                <i class="fas fa-tree"></i>
+                <h3>Reforestación</h3>
+                <p>Plantamos árboles en nuestra comunidad como parte del compromiso ecológico.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="contact">
+        <h2>Contáctanos</h2>
+        <p>¿Tienes ideas para colaborar o necesitas más información? Escríbenos:</p>
+        <form>
+            <input type="text" placeholder="Tu nombre" required>
+            <input type="email" placeholder="Tu correo" required>
+            <textarea placeholder="Tu mensaje"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Colegio Nuestra Señora de Altagracia. Todos los derechos reservados.</p>
+        <div class="social">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
